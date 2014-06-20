@@ -1,0 +1,95 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+@import url(css/font-awesome.min.css);
+.accordion{
+	overflow: hidden;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font: normal 14px/1.2 'Open Sans', sans-serif;
+	margin: 5px;
+}
+.accordion p {
+	padding: 5px 0;
+	margin: 0;
+}
+.accordion h2 {
+  float: none !important;
+  opacity: inherit;
+  text-shadow: none !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  line-height: 20px;
+}
+.accordion h2 a, .accordion h2 a:hover {
+  display: block;
+  color: #000;  
+  margin: 0;
+  text-decoration: none;
+  font-weight: 400;
+}
+.accordion h2.open	 {border-bottom: 0px !important;}
+.accordion .collapse-contentblock {background-color: #FFFFFF; color: #000;}
+/* Pre hide sections with JavaScript on --- */
+.accordion .collapse-contentblock {
+  display: none;
+}
+/*==============================================   Toggle icon   ==========================================*/
+.accordion h2 a:before {
+	font-family: 'FontAwesome';
+	src: url('../font/fontawesome-webfont.eot?v=3.0.1');
+	src: url('../font/fontawesome-webfont.eot?#iefix&v=3.0.1') format('embedded-opentype'),
+    url('../font/fontawesome-webfont.woff?v=3.0.1') format('woff'),
+    url('../font/fontawesome-webfont.ttf?v=3.0.1') format('truetype');
+    border-right: 1px solid #f1f1f1;
+    display: inline-block;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0 15px 0 0;
+    padding: 0 0 0 15px;
+    text-decoration: inherit;
+    width: 30px;
+}
+
+.accordion h2 {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 39%, rgba(241, 241, 241, 1) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid #f1f1f1;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 0 5px;
+    font-size: 18px;
+    color: #000;
+}
+/*---------------------------------------- Plus/Minus (default) -----------------------------------------*/
+.accordion h2 a:before { 
+	content: "\f067"; /*plus icon*/
+}
+.accordion h2.open a:before { 
+	content: "\f068"; /*minus icon*/
+}
+/*---------------------------------------- Chevron Right/Chevron up -----------------------------------------*/
+.accordion.chevrons h2 a:before { 
+	content: "\f054"; /*chevron right*/
+}
+.accordion.chevrons h2.open a:before { 
+	content: "\f078"; /*chevron down*/
+}
+/*---------------------------------------- Plus sign/Minus sign -----------------------------------------*/
+.accordion.signs h2 a:before { 
+	content: "\f055"; /*icon minus sign*/
+}
+.accordion.signs h2.open a:before { 
+	content: "\f056"; /*icon plus sign*/
+}
+/*---------------------------------------- Caret right/Caret up -----------------------------------------*/
+.accordion.carets h2 a:before { 
+	content: "\f0da"; /*icon minus sign*/
+}
+.accordion.carets h2.open a:before { 
+	content: "\f0d7"; /*icon plus sign*/
+}
+/*---------------------------------------- Circle arrow right/Circle arrow up -----------------------------------------*/
+.accordion.circle-arrows h2 a:before { 
+	content: "\f0a9"; /*icon circle arrow right*/
+}
+.accordion.circle-arrows h2.open a:before { 
+	content: "\f0ab"; /*icon circle arrow down*/
+}
