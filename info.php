@@ -23,7 +23,7 @@
 $module_directory = 'accordion';
 $module_name = 'Accordion';
 $module_function = 'page';
-$module_version = '2.1';
+$module_version = '2.2';
 $module_platform = '2.8.x';
 $module_author = 'Nibz';
 $module_license = 'GNU General Public License';
