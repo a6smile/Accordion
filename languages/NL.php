@@ -28,6 +28,9 @@ $MODIFY_QUESTION['ANSWER'] = 'Lange tekst';
 
 $MODIFY_SETTINGS['METHOD'] = 'Methode';
 $MODIFY_SETTINGS['ICON'] = 'Icoon';
+$MODIFY_SETTINGS['ICON_PLACEMENT'] = 'Icoon plaatsing';
+$MODIFY_SETTINGS['LEFT'] = 'Links';
+$MODIFY_SETTINGS['RIGHT'] = 'Rechts';
 $MODIFY_SETTINGS['HEADER'] = 'Header (tekst voor FAQ)';
 $MODIFY_SETTINGS['FOOTER'] = 'Footer (text na FAQ)';
 $MODIFY_SETTINGS['ACTIVE_ICON'] = '<- Actief icoon instelling';

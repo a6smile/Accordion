@@ -30,6 +30,7 @@ $fetch_settings = $query_settings->fetchRow();
 $header= $admin->strip_slashes($fetch_settings['header']);
 $footer= $admin->strip_slashes($fetch_settings['footer']);
 $icon= $admin->strip_slashes($fetch_settings['icon']);
+$icon_placement= $admin->strip_slashes($fetch_settings['icon_placement']);
 $accordion_method = $admin->strip_slashes($fetch_settings['accordion_method']);
 
 //Check if method is set to accordion
@@ -49,7 +50,7 @@ if ( $header <> "" ) {
 $query_quests = $database->query("SELECT * FROM `".TABLE_PREFIX."mod_accordion_questions` WHERE section_id='".$section_id."' ORDER BY pos ASC");
 if($query_quests->numRows() > 0)
 	{
-		echo '<div class="accordion '.$icon.' sid-'.$section_id.'">';
+		echo '<div class="wb-accordion '.$icon_placement.' '.$icon.' sid-'.$section_id.'">';
 		while($quest = $query_quests->fetchRow())
 		{
 			$content= $admin->strip_slashes($quest['answer']);
@@ -58,8 +59,8 @@ if($query_quests->numRows() > 0)
 			$status_on_pageload = $admin->strip_slashes($quest['status_on_pageload']);
 			$wb->preprocess($content);
 			
-			echo '<h2 class="'.$status_on_pageload.'">'.$question.'</h2>';
-			echo '<div class="collapse-contentblock">'.$content.'</div>';
+			echo '<span class="accordion-title '.$status_on_pageload.'">'.$question.'</span>';
+			echo '<div class="accordion-content">'.$content.'</div>';
 		}
 		echo '</div>';
 		echo '<script type="text/javascript">

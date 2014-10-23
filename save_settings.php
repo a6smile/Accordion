@@ -29,6 +29,7 @@ require(WB_PATH.'/modules/admin.php');
 $header = $admin->add_slashes(str_replace('?php', '', $_POST['header']));
 $footer = $admin->add_slashes(str_replace('?php', '', $_POST['footer']));
 $icon = $admin->add_slashes(str_replace('?php', '', $_POST['icon']));
+$icon_placement = $admin->add_slashes(str_replace('?php', '', $_POST['icon_placement']));
 $accordion_method = $admin->add_slashes(str_replace('?php', '', $_POST['accordion_method']));
 
 // Update settings
@@ -36,6 +37,7 @@ $database->query("UPDATE ".TABLE_PREFIX."mod_accordion_settings SET "
 	." header = '$header', "
 	." footer = '$footer', "
 	." icon = '$icon', "
+	." icon_placement = '$icon_placement', "
 	." accordion_method = '$accordion_method'"
 	." WHERE section_id = '$section_id'");
 

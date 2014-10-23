@@ -28,6 +28,9 @@ $MODIFY_QUESTION['ANSWER'] = 'Long text';
 
 $MODIFY_SETTINGS['METHOD'] = 'Method';
 $MODIFY_SETTINGS['ICON'] = 'Icon';
+$MODIFY_SETTINGS['ICON_PLACEMENT'] = 'Icon placement';
+$MODIFY_SETTINGS['LEFT'] = 'Left';
+$MODIFY_SETTINGS['RIGHT'] = 'Right';
 $MODIFY_SETTINGS['HEADER'] = 'Header (text before FAQ)';
 $MODIFY_SETTINGS['FOOTER'] = 'Footer (text after FAQ)';
 $MODIFY_SETTINGS['ACTIVE_ICON'] = '<- Active icon';

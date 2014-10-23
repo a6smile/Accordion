@@ -1,95 +1,142 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
 @import url(css/font-awesome.min.css);
-.accordion{
-	overflow: hidden;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	font: normal 14px/1.2 'Open Sans', sans-serif;
-	margin: 5px;
+.wb-accordion {
+	font-family: Arial,sans-serif;
 }
-.accordion p {
-	padding: 5px 0;
-	margin: 0;
+.wb-accordion .accordion-title {
+    background-color: #f9f9f9;
+    background-image: -moz-linear-gradient(center bottom , #f7f7f7 0%, #ffffff 100%);
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    cursor: pointer;
+    display: block;
+    margin: 0;
+    border-bottom: 0px;
 }
-.accordion h2 {
-  float: none !important;
-  opacity: inherit;
-  text-shadow: none !important;
-  margin: 0px !important;
-  padding: 0px !important;
-  line-height: 20px;
+.wb-accordion .accordion-title.open {
+	border-bottom: 1px solid #ddd;
 }
-.accordion h2 a, .accordion h2 a:hover {
-  display: block;
-  color: #000;  
-  margin: 0;
-  text-decoration: none;
-  font-weight: 400;
+.wb-accordion .accordion-title:last-of-type {
+	border-bottom: 1px solid #ddd;
 }
-.accordion h2.open	 {border-bottom: 0px !important;}
-.accordion .collapse-contentblock {background-color: #FFFFFF; color: #000;}
-/* Pre hide sections with JavaScript on --- */
-.accordion .collapse-contentblock {
-  display: none;
+.wb-accordion .accordion-title a, .wb-accordion .accordion-title a:link, .wb-accordion .accordion-title a:visited  {
+    border-left: medium none #ddd;
+    color: #444;
+    display: block;
+    font-weight: bold;
+    outline: medium none;
+    padding: 0px 10px;
+    text-decoration: none;
+    line-height: 40px;
+    position: relative;
+    margin-left: 40px;
 }
-/*==============================================   Toggle icon   ==========================================*/
-.accordion h2 a:before {
-	font-family: 'FontAwesome';
-	src: url('../font/fontawesome-webfont.eot?v=3.0.1');
-	src: url('../font/fontawesome-webfont.eot?#iefix&v=3.0.1') format('embedded-opentype'),
-    url('../font/fontawesome-webfont.woff?v=3.0.1') format('woff'),
-    url('../font/fontawesome-webfont.ttf?v=3.0.1') format('truetype');
-    border-right: 1px solid #f1f1f1;
+.wb-accordion.icon-right .accordion-title a, .wb-accordion.icon-right .accordion-title a:link, .wb-accordion.icon-right .accordion-title a:visited  {
+	margin-left: 0px;
+	margin-right: 40px;
+}
+.wb-accordion .accordion-title a:before{
+	border-right: 1px solid #f1f1f1;
     display: inline-block;
+    font-family: "FontAwesome";
     font-style: normal;
     font-weight: normal;
     margin: 0 15px 0 0;
-    padding: 0 0 0 15px;
+    padding: 0;
     text-decoration: inherit;
-    width: 30px;
+    width: 40px;
+    text-align: center;
+    position: absolute;
+    left: -40px;
+    height: 100%;
+    font-size: 14px;
 }
-
-.accordion h2 {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 39%, rgba(241, 241, 241, 1) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
-    border: 1px solid #f1f1f1;
-    height: 40px;
-    line-height: 40px;
-    margin: 0 0 5px;
-    font-size: 18px;
-    color: #000;
+.wb-accordion p{
+	margin: 0;
+	padding: 5px 0;
+}
+.wb-accordion.icon-right .accordion-title a:before{
+	display: none;
+	border: 0px;
+}
+.wb-accordion.icon-right .accordion-title a:after{
+	border-left: 1px solid #f1f1f1;
+    display: inline-block;
+    font-family: "FontAwesome";
+    font-style: normal;
+    font-weight: normal;
+    margin: 0 0 0 15px;
+    padding: 0;
+    text-decoration: inherit;
+    width: 40px;
+    text-align: center;
+    position: absolute;
+  	top: 0;
+    right: -40px;
+    height: 100%;
+    font-size: 14px;
 }
 /*---------------------------------------- Plus/Minus (default) -----------------------------------------*/
-.accordion h2 a:before { 
+.wb-accordion .accordion-title a:before { 
 	content: "\f067"; /*plus icon*/
 }
-.accordion h2.open a:before { 
+.wb-accordion .accordion-title.open a:before { 
+	content: "\f068"; /*minus icon*/
+}
+.wb-accordion.icon-right .accordion-title a:after { 
+	content: "\f067"; /*plus icon*/
+}
+.wb-accordion.icon-right .accordion-title.open a:after { 
 	content: "\f068"; /*minus icon*/
 }
 /*---------------------------------------- Chevron Right/Chevron up -----------------------------------------*/
-.accordion.chevrons h2 a:before { 
+.wb-accordion.chevrons .accordion-title a:before { 
 	content: "\f054"; /*chevron right*/
 }
-.accordion.chevrons h2.open a:before { 
+.wb-accordion.chevrons .accordion-title.open a:before { 
+	content: "\f078"; /*chevron down*/
+}
+.wb-accordion.icon-right.chevrons .accordion-title a:after { 
+	content: "\f054"; /*chevron right*/
+}
+.wb-accordion.icon-right.chevrons .accordion-title.open a:after { 
 	content: "\f078"; /*chevron down*/
 }
 /*---------------------------------------- Plus sign/Minus sign -----------------------------------------*/
-.accordion.signs h2 a:before { 
+.wb-accordion.signs .accordion-title a:before { 
 	content: "\f055"; /*icon minus sign*/
 }
-.accordion.signs h2.open a:before { 
+.wb-accordion.signs .accordion-title.open a:before { 
+	content: "\f056"; /*icon plus sign*/
+}
+.wb-accordion.icon-right.signs .accordion-title a:after { 
+	content: "\f055"; /*icon minus sign*/
+}
+.wb-accordion.icon-right.signs .accordion-title.open a:after { 
 	content: "\f056"; /*icon plus sign*/
 }
 /*---------------------------------------- Caret right/Caret up -----------------------------------------*/
-.accordion.carets h2 a:before { 
+.wb-accordion.carets .accordion-title a:before { 
 	content: "\f0da"; /*icon minus sign*/
 }
-.accordion.carets h2.open a:before { 
+.wb-accordion.carets .accordion-title.open a:before { 
+	content: "\f0d7"; /*icon plus sign*/
+}
+.wb-accordion.icon-right.carets .accordion-title a:after { 
+	content: "\f0da"; /*icon minus sign*/
+}
+.wb-accordion.icon-right.carets .accordion-title.open a:after { 
 	content: "\f0d7"; /*icon plus sign*/
 }
 /*---------------------------------------- Circle arrow right/Circle arrow up -----------------------------------------*/
-.accordion.circle-arrows h2 a:before { 
+.wb-accordion.circle-arrows .accordion-title a:before { 
 	content: "\f0a9"; /*icon circle arrow right*/
 }
-.accordion.circle-arrows h2.open a:before { 
+.wb-accordion.circle-arrows .accordion-title.open a:before { 
+	content: "\f0ab"; /*icon circle arrow down*/
+}
+.wb-accordion.icon-right.circle-arrows .accordion-title a:after { 
+	content: "\f0a9"; /*icon circle arrow right*/
+}
+.wb-accordion.icon-right.circle-arrows .accordion-title.open a:after { 
 	content: "\f0ab"; /*icon circle arrow down*/
 }

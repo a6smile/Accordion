@@ -41,6 +41,7 @@ if(defined('WB_URL')) {
 		. '`header` TEXT NOT NULL,'
 		. '`footer` TEXT NOT NULL,'
 		. '`icon` TEXT NOT NULL,'
+		. '`icon_placement` TEXT NOT NULL,'
 		. '`accordion_method` TEXT NOT NULL,'
 		. 'PRIMARY KEY (section_id)'
 		. ')';

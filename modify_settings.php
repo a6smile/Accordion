@@ -72,8 +72,20 @@ if(function_exists('edit_module_css')) {
 	<td class="setting_name accordion_method">	
 		<?php $method = $admin->strip_slashes($fetch_settings['accordion_method']);?>
 		<select name="accordion_method">
-			<option value="accordion" <?php if ($method == "accordion"){echo 'selected="selected"';} ?>>accordion</option>
-			<option value="toggle" <?php if ($method == "toggle"){echo 'selected="selected"';} ?>>toggle</option>
+			<option value="accordion" <?php if ($method == "accordion"){echo 'selected="selected"';} ?>>Accordion</option>
+			<option value="toggle" <?php if ($method == "toggle"){echo 'selected="selected"';} ?>>Toggle</option>
+  		</select> 
+	</td>
+</tr>
+<tr>
+	<td class="setting_name" style="width: 200px">
+		<?php echo $MODIFY_SETTINGS['ICON_PLACEMENT']; ?>:
+	</td>
+	<td class="setting_name icon_placement">	
+		<?php $icon_placement = $admin->strip_slashes($fetch_settings['icon_placement']);?>
+		<select name="icon_placement">
+			<option value="icon-left" <?php if ($icon_placement == "icon-left"){echo 'selected="selected"';} ?>><?php echo $MODIFY_SETTINGS['LEFT']; ?></option>
+			<option value="icon-right" <?php if ($icon_placement == "icon-right"){echo 'selected="selected"';} ?>><?php echo $MODIFY_SETTINGS['RIGHT']; ?></option>
   		</select> 
 	</td>
 </tr>

@@ -5,6 +5,11 @@
     padding: 5px;
     width: 100%;
 }
+.icon_placement > select {
+    height: 30px;
+    padding: 5px;
+    width: 100%;
+}
 .row_a {background: #f0f0f0}
 .row_a, .row_b {height: 40px}
 
