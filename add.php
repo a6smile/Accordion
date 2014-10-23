@@ -26,7 +26,7 @@ if(defined('WB_PATH') == false) { exit("Cannot access this file directly"); }
 
 // These are the default setting
 $icon = 'default';
-$icon_placement = 'left';
+$icon_placement = 'symbol-left';
 $accordion_method ='accordion';
 
 $database->query("INSERT INTO ".TABLE_PREFIX."mod_accordion_settings (section_id,page_id,icon,icon_placement,accordion_method) VALUES ('$section_id', '$page_id', '$icon', '$icon_placement', '$accordion_method')");

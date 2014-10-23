@@ -1,0 +1,65 @@
+/*---------------------------------------- Plus/Minus (default) -----------------------------------------*/
+.wb-accordion .accordion-title a:before { 
+	content: "\f067"; /*plus icon*/
+}
+.wb-accordion .accordion-title.open a:before { 
+	content: "\f068"; /*minus icon*/
+}
+.wb-accordion.icon-right .accordion-title a:after { 
+	content: "\f067"; /*plus icon*/
+}
+.wb-accordion.icon-right .accordion-title.open a:after { 
+	content: "\f068"; /*minus icon*/
+}
+/*---------------------------------------- Chevron Right/Chevron up -----------------------------------------*/
+.wb-accordion.chevrons .accordion-title a:before { 
+	content: "\f054"; /*chevron right*/
+}
+.wb-accordion.chevrons .accordion-title.open a:before { 
+	content: "\f078"; /*chevron down*/
+}
+.wb-accordion.icon-right.chevrons .accordion-title a:after { 
+	content: "\f054"; /*chevron right*/
+}
+.wb-accordion.icon-right.chevrons .accordion-title.open a:after { 
+	content: "\f078"; /*chevron down*/
+}
+/*---------------------------------------- Plus sign/Minus sign -----------------------------------------*/
+.wb-accordion.signs .accordion-title a:before { 
+	content: "\f055"; /*icon minus sign*/
+}
+.wb-accordion.signs .accordion-title.open a:before { 
+	content: "\f056"; /*icon plus sign*/
+}
+.wb-accordion.icon-right.signs .accordion-title a:after { 
+	content: "\f055"; /*icon minus sign*/
+}
+.wb-accordion.icon-right.signs .accordion-title.open a:after { 
+	content: "\f056"; /*icon plus sign*/
+}
+/*---------------------------------------- Caret right/Caret up -----------------------------------------*/
+.wb-accordion.carets .accordion-title a:before { 
+	content: "\f0da"; /*icon minus sign*/
+}
+.wb-accordion.carets .accordion-title.open a:before { 
+	content: "\f0d7"; /*icon plus sign*/
+}
+.wb-accordion.icon-right.carets .accordion-title a:after { 
+	content: "\f0da"; /*icon minus sign*/
+}
+.wb-accordion.icon-right.carets .accordion-title.open a:after { 
+	content: "\f0d7"; /*icon plus sign*/
+}
+/*---------------------------------------- Circle arrow right/Circle arrow up -----------------------------------------*/
+.wb-accordion.circle-arrows .accordion-title a:before { 
+	content: "\f0a9"; /*icon circle arrow right*/
+}
+.wb-accordion.circle-arrows .accordion-title.open a:before { 
+	content: "\f0ab"; /*icon circle arrow down*/
+}
+.wb-accordion.icon-right.circle-arrows .accordion-title a:after { 
+	content: "\f0a9"; /*icon circle arrow right*/
+}
+.wb-accordion.icon-right.circle-arrows .accordion-title.open a:after { 
+	content: "\f0ab"; /*icon circle arrow down*/
+}

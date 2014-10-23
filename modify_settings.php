@@ -84,8 +84,8 @@ if(function_exists('edit_module_css')) {
 	<td class="setting_name icon_placement">	
 		<?php $icon_placement = $admin->strip_slashes($fetch_settings['icon_placement']);?>
 		<select name="icon_placement">
-			<option value="icon-left" <?php if ($icon_placement == "icon-left"){echo 'selected="selected"';} ?>><?php echo $MODIFY_SETTINGS['LEFT']; ?></option>
-			<option value="icon-right" <?php if ($icon_placement == "icon-right"){echo 'selected="selected"';} ?>><?php echo $MODIFY_SETTINGS['RIGHT']; ?></option>
+			<option value="symbol-left" <?php if ($icon_placement == "symbol-left"){echo 'selected="selected"';} ?>><?php echo $MODIFY_SETTINGS['LEFT']; ?></option>
+			<option value="symbol-right" <?php if ($icon_placement == "symbol-right"){echo 'selected="selected"';} ?>><?php echo $MODIFY_SETTINGS['RIGHT']; ?></option>
   		</select> 
 	</td>
 </tr>
