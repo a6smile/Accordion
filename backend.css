@@ -1,4 +1,14 @@
-@import url('css/font-awesome.css');
+img.fa-svg {
+	height: 15px;
+    display: inline;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    margin-top: 0;
+    text-decoration: inherit;
+    vertical-align: sub;
+    width: auto;
+}
 
 .accordion_method > select {
     height: 30px;
@@ -148,9 +158,14 @@
 }
 
 
-
+.setting_value {
+	vertical-align: top;
+	width: 90%;
+}
 .setting_name {
 	vertical-align: top;
+	width: 10%;
+	min-width: 180px
 }
 
 /* 

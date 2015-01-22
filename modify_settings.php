@@ -66,10 +66,10 @@ if(function_exists('edit_module_css')) {
 	<td colspan="2"><strong><?php echo $MODIFY_SETTINGS['SETTINGS']; ?></strong></td>
 </tr>
 <tr>
-	<td class="setting_name" style="width: 200px">
+	<td class="setting_name">
 		<?php echo $MODIFY_SETTINGS['METHOD']; ?>:
 	</td>
-	<td class="setting_name accordion_method">	
+	<td class="setting_value accordion_method">	
 		<?php $method = $admin->strip_slashes($fetch_settings['accordion_method']);?>
 		<select name="accordion_method">
 			<option value="accordion" <?php if ($method == "accordion"){echo 'selected="selected"';} ?>>Accordion</option>
@@ -78,10 +78,10 @@ if(function_exists('edit_module_css')) {
 	</td>
 </tr>
 <tr>
-	<td class="setting_name" style="width: 200px">
+	<td class="setting_name">
 		<?php echo $MODIFY_SETTINGS['ICON_PLACEMENT']; ?>:
 	</td>
-	<td class="setting_name icon_placement">	
+	<td class="setting_value icon_placement">	
 		<?php $icon_placement = $admin->strip_slashes($fetch_settings['icon_placement']);?>
 		<select name="icon_placement">
 			<option value="symbol-left" <?php if ($icon_placement == "symbol-left"){echo 'selected="selected"';} ?>><?php echo $MODIFY_SETTINGS['LEFT']; ?></option>
@@ -90,11 +90,11 @@ if(function_exists('edit_module_css')) {
 	</td>
 </tr>
 <tr>
-	<td class="setting_name" style="width: 200px">
+	<td class="setting_name">
 		<?php echo $MODIFY_SETTINGS['ICON']; ?>:
 	</td>
-	<td class="setting_name">
-		<select id="icons" name="icon" style="width:680px;">
+	<td class="setting_value">
+		<select id="icons" name="icon" style="width:100%;">
 			<option value="<?php echo $admin->strip_slashes($fetch_settings['icon']); ?>" data-image="<?php echo WB_URL; ?>/modules/accordion/images/msdropdown/icons/<?php echo $admin->strip_slashes($fetch_settings['icon']); ?>.png" data-description="<?php echo $MODIFY_SETTINGS['ACTIVE_ICON']; ?>"><?php echo $MODIFY_SETTINGS['CHOOSE_ICON']; ?></option>
 			<option value="default" data-image="<?php echo WB_URL; ?>/modules/accordion/images/msdropdown/icons/default.png" data-description=""><?php echo $MODIFY_SETTINGS['DEFAULT_ICON']; ?></option>
 			<option value="chevrons" data-image="<?php echo WB_URL; ?>/modules/accordion/images/msdropdown/icons/chevrons.png" data-description=""><?php echo $MODIFY_SETTINGS['CHEVRONS']; ?></option>
@@ -108,7 +108,7 @@ if(function_exists('edit_module_css')) {
 	<td class="setting_name">
 		<?php echo $MODIFY_SETTINGS['HEADER']; ?>:
 	</td>
-	<td class="setting_name">
+	<td class="setting_value">
 		<textarea name="header" style="width: 98%;"><?php echo $admin->strip_slashes($fetch_settings['header']); ?></textarea>
 	</td>
 </tr>
@@ -116,7 +116,7 @@ if(function_exists('edit_module_css')) {
 	<td class="setting_name" style="width: 200px">
 		<?php echo $MODIFY_SETTINGS['FOOTER']; ?>:
 	</td>
-	<td class="setting_name">
+	<td class="setting_value">
 		<textarea name="footer" style="width: 98%;"><?php echo $admin->strip_slashes($fetch_settings['footer']); ?></textarea>
 	</td>
 </tr>

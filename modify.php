@@ -44,10 +44,10 @@ if( $query_settings->numRows() == 0 ) {
 <table cellpadding="0" cellspacing="0" border="0" width="100%">
 <tr>
 	<td align="left" width="50%">
-		<a class="btn" href="<?php echo WB_URL; ?>/modules/accordion/add_question.php?page_id=<?php echo $page_id; ?>&section_id=<?php echo $section_id; ?>"><i class="icon-plus"></i> <?php echo $MODIFY['ADD_FAQ']; ?></a>
+		<a class="btn" href="<?php echo WB_URL; ?>/modules/accordion/add_question.php?page_id=<?php echo $page_id; ?>&section_id=<?php echo $section_id; ?>"><img class="fa-svg" src="<?php echo WB_URL; ?>/modules/accordion/images/icons/plus.png"> <?php echo $MODIFY['ADD_FAQ']; ?></a>
 	</td>
 	<td align="center" width="50%">
-		<a class="btn" href="<?php echo WB_URL; ?>/modules/accordion/modify_settings.php?page_id=<?php echo $page_id; ?>&section_id=<?php echo $section_id; ?>"><i class="icon-cogs"></i> <?php echo $MODIFY['SETTINGS']; ?></a>
+		<a class="btn" href="<?php echo WB_URL; ?>/modules/accordion/modify_settings.php?page_id=<?php echo $page_id; ?>&section_id=<?php echo $section_id; ?>"><img class="fa-svg" src="<?php echo WB_URL; ?>/modules/accordion/images/icons/cogs.png"> <?php echo $MODIFY['SETTINGS']; ?></a>
 	</td>
 </tr>
 </table>
