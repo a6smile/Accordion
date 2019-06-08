@@ -29,6 +29,6 @@ $icon = 'default';
 $icon_placement = 'symbol-left';
 $accordion_method ='accordion';
 
-$database->query("INSERT INTO ".TABLE_PREFIX."mod_accordion_settings (section_id,page_id,icon,icon_placement,accordion_method) VALUES ('$section_id', '$page_id', '$icon', '$icon_placement', '$accordion_method')");
+$database->query("INSERT INTO ".TABLE_PREFIX."mod_accordion_settings (section_id,page_id,header,footer,icon,icon_placement,accordion_method) VALUES ('$section_id', '$page_id', '', '', '$icon', '$icon_placement', '$accordion_method')");
 
 ?>
